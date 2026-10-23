@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { ArrowRight, Zap, Wifi, Headset } from "lucide-react";
 import FiberCanvas from "./FiberCanvas";
+import FiberTrail from "./FiberTrail";
 import Orbit from "./Orbit";
 
 const badges = [
@@ -22,6 +23,7 @@ export default function Hero() {
       className="relative flex min-h-[100svh] items-center overflow-hidden bg-[radial-gradient(ellipse_at_top,#03256C_0%,#020F2E_45%,#010818_100%)]"
     >
       <FiberCanvas className="absolute inset-0 h-full w-full" />
+      <FiberTrail className="absolute inset-0 h-full w-full" />
       <div className="pointer-events-none absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-navy-ink to-transparent" />
       <Orbit className="pointer-events-none absolute -right-24 top-24 w-[560px] opacity-25 sm:opacity-40" />
 
